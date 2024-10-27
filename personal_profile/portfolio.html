@@ -11,7 +11,7 @@
             font-family: 'Jura', sans-serif;
             margin: 0;
             overflow-x: hidden;
-            background-color: black; /*  background color of pages */
+            background-color: black; 
         }
 
         
@@ -62,6 +62,31 @@
             transition: opacity 0.6s ease-out, transform 0.6s ease-out;
         }
 
+        .education-section {
+            background-color: #000;
+            color: #fff;
+            padding: 4rem 1rem;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .thank-you-section {
+            background-image: url('footer.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
         .font-jura {
             font-family: 'Jura', sans-serif;
         }
@@ -92,14 +117,18 @@
                 
                 
                 <div>
-                    <h1 class="text-4xl md:text-5xl font-semibold mb-8 font-jura">About me</h1>
+                    <h1 class="text-4xl md:text-5xl font-semibold mb-8">About me</h1>
                     <p class="text-xl leading-relaxed mb-4">
-                        Hello young designers! No idea why you are here? Everything is a first experience that adds to your favorite things to do. So is the concept of being a UI/UX designer. You try to experience small design concepts, and who knows, you might be a professional at it one day. With that, I have designed a brief Personal Profile about myself. Are you ready? My name is Jigden Shakya. I am currently a first-year college student pursuing a degree in Bachelor of Engineering in Software Engineering. This portfolio showcases my resume, education, accomplishments, and work as a UI/UX designer.
+                        Hello young designers! No idea why you are here? Everything is a first experience that adds to your favorite things to do.
+                         So is the concept of being a UI/UX designer. You try to experience small design concepts, and who knows, you might be a 
+                         professional at it one day. With that, I have designed a brief Personal Profile about myself. Are you ready? My name is Jigden Shakya.
+                          I am currently a first-year college student pursuing a degree in Bachelor of Engineering in Software Engineering.
+                           This portfolio showcases my resume, education, accomplishments, and work as a UI/UX designer.
                     </p><br>
                     <p class="text-xl font-semibold mt-8">More about me ↓</p>
                 </div>
                 
-                
+                <!-- Follow Links -->
                 <div class="flex flex-col items-center space-y-8 mt-12 md:mt-24 ml-6">
                     <div class="w-80 h-96 bg-white rounded-lg"><img src="profile.jpg" alt="profile" class="w-full h-full object-cover rounded-lg"></div>
                     
@@ -128,9 +157,9 @@
     <!-- Experience Section -->
     <section class="experience-section" id="experience">
         <div class="max-w-4xl mx-auto">
-            <!-- Header -->
-            <h1 class="text-5xl font-light mb-4 text-left">Experience</h1>
-            <p class="text-gray-300 text-lg mb-10 text-left">
+            
+            <h1 class="text-4xl md:text-5xl font-semibold mb-8">Experience</h1><br><br>
+            <p class="text-xl leading-relaxed mb-4">
                 I have had a lot of projects as a UI/UX designer. Some of these included replicating particular 
                 website features. Throughout the period of doing projects I could grasp a lot of values that you 
                 should possess as a designer. It includes the value of working as a team, addressing user needs 
@@ -138,10 +167,10 @@
                 modify their designs. This way I could really develop my skills as a front-end engineer. Some of 
                 projects include replicating News websites and designing the popular websites contributed by 
                 global developers. I also had experience of web development using HTML/CSS.
-            </p>
+            </p> <br>
 
-            <!-- Card Section -->
-            <div class="flex justify-center gap-16"> <!-- Increased gap from 10 to 16 -->
+            <!-- Card links -->
+            <div class="flex justify-center gap-16"> 
                 <!-- Card 1 -->
                 <div class="relative bg-white rounded-lg shadow-lg w-64 h-64 flex flex-col overflow-hidden border-2 border-white">
                     <!-- Label -->
@@ -149,7 +178,7 @@
                         News website design
                     </div>
                     
-                    <!-- Main Content -->
+                    <!-- Content -->
                     <div class="flex flex-col items-center justify-center flex-grow p-6">
                         <h2 class="text-2xl font-bold text-gray-800 mb-2">BHUTAN</h2>
                         <p class="text-gray-500 italic">Believe</p>
@@ -168,7 +197,7 @@
                         Designing Adobe
                     </div>
                     
-                    <!-- Main Content -->
+                    <!-- Content -->
                     <div class="flex flex-col items-center justify-center flex-grow p-6">
                         <img src="adobe-removebg-preview.png" alt="Adobe" class="h-20 w-auto mb-2">
                     </div>
@@ -182,45 +211,110 @@
         </div>
     </section>
 
-    <!-- JavaScript for scroll effects -->
-    <script>
-        window.addEventListener('scroll', () => {
-            const text = document.getElementById('text');
-            const moon = document.getElementById('moon');
-            const aboutSection = document.getElementById('about');
-            const experienceSection = document.getElementById('experience');
-            const scrollPosition = window.scrollY;
+    <!-- Education Section -->
+    <section class="education-section" id="education">
+        <div class="max-w-4xl mx-auto px-4 py-16">
+            
+            <div class="max-w-4xl mx-auto">
+                <!-- Title -->
+                <h1 class="text-4xl md:text-5xl font-semibold mb-8">Education</h1><br><br>
+                
+                <!-- Description -->
+                <p class="text-xl leading-relaxed mb-4">
+                  I am currently in my first year pursuing a Bachelor of Engineering in Software Engineering in CST, where I am building the foundation of my career in technology. Before university,
+                   I attended Samtse Higher Secondary School, where I developed a strong interest in engineering and software development. 
+                  One of the key highlights of my journey so far has been participating in the national innovation competition, FAB 23, 
+                  which allowed me to explore creative problem-solving and innovation. These experiences have fueled my passion for software engineering, 
+                  and I’m excited to continue growing in this field.
+                </p>
+            </div><br><br>
+            
+            <!-- Image Grids -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-16 justify-items-center">
+                <div class="bg-white rounded-lg shadow-lg w-72 h-48 flex items-center justify-center">
+                    <img src="i1.jpg" alt="Image 1" class="rounded-lg object-cover w-full h-full">
+                </div>
+                <div class="bg-white rounded-lg shadow-lg w-72 h-48 flex items-center justify-center">
+                    <img src="i2.jpg" alt="Image 2" class="rounded-lg object-cover w-full h-full">
+                </div>
+                <div class="bg-white rounded-lg shadow-lg w-72 h-48 flex items-center justify-center">
+                    <img src="i3.jpg" alt="Image 3" class="rounded-lg object-cover w-full h-full">
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-- Footer Section -->
+    <section class="thank-you-section" id="thank-you">
+      <div class="text-center">
+        <h1 class="text-white text-4xl md:text-8xl">Thank you</h1>
+        <div class="text-sm"><br><br><br>
+          <p>© Copyright Jigden Shakya 2024, SWE College of Science and Tech.</p>
+          <p>Contact us</p>
+          <p># 77***** / 17*****</p>
+        </div>
+      </div>
+    </section>
+  
 
-            // Homepage animation
-            if (scrollPosition > 5) {  // Reduced from 100 to 50 for earlier transition
-                text.style.opacity = '1';
-                text.style.transform = 'translateY(0)';
-                moon.style.opacity = '1';
-            } else {
-                text.style.opacity = '0';
-                text.style.transform = 'translateY(20px)';
-                moon.style.opacity = '0';
-            }
+    
 
-            // About Section parallax effect
-            if (scrollPosition > window.innerHeight / 2) {
-                aboutSection.style.opacity = '1';
-                aboutSection.style.transform = 'translateY(0)';
-            } else {
-                aboutSection.style.opacity = '0';
-                aboutSection.style.transform = 'translateY(50px)';
-            }
+ <!-- JavaScript for scroll effects -->
+ <script>
+    window.addEventListener('scroll', () => {
+        const text = document.getElementById('text');
+        const moon = document.getElementById('moon');
+        const aboutSection = document.getElementById('about');
+        const experienceSection = document.getElementById('experience');
+        const educationSection = document.getElementById('education');
+        const thankYouSection = document.getElementById('thank-you');
+        const scrollPosition = window.scrollY;
 
-            // Experience Section parallax effect
-            if (scrollPosition > (window.innerHeight + window.innerHeight / 2)) {
-                experienceSection.style.opacity = '1';
-                experienceSection.style.transform = 'translateY(0)';
-            } else {
-                experienceSection.style.opacity = '0';
-                experienceSection.style.transform = 'translateY(50px)';
-            }
-        });
-    </script>
+        // Homepage animation
+        if (scrollPosition > 5) {
+            text.style.opacity = '1';
+            text.style.transform = 'translateY(0)';
+            moon.style.opacity = '1';
+        } else {
+            text.style.opacity = '0';
+            text.style.transform = 'translateY(20px)';
+            moon.style.opacity = '0';
+        }
+
+        // About Section parallax effect
+        if (scrollPosition > window.innerHeight / 2) {
+            aboutSection.style.opacity = '1';
+            aboutSection.style.transform = 'translateY(0)';
+        } else {
+            aboutSection.style.opacity = '0';
+            aboutSection.style.transform = 'translateY(50px)';
+        }
+
+        // Experience Section parallax effect
+        if (scrollPosition > (window.innerHeight + window.innerHeight / 2)) {
+            experienceSection.style.opacity = '1';
+            experienceSection.style.transform = 'translateY(0)';
+        } else {
+            experienceSection.style.opacity = '0';
+            experienceSection.style.transform = 'translateY(50px)';
+        }
+
+        // Education Section parallax effect
+        if (scrollPosition > (window.innerHeight * 2 + window.innerHeight / 2)) {
+            educationSection.style.opacity = '1';
+            educationSection.style.transform = 'translateY(0)';
+        } else {
+            educationSection.style.opacity = '0';
+            educationSection.style.transform = 'translateY(50px)';
+        }
+        // Footer Section animation
+        if (scrollPosition > (window.innerHeight * 3 + window.innerHeight / 2)) {
+        thankYouSection.style.opacity = '1';
+        thankYouSection.style.transform = 'translateY(0)';
+        } else {
+        thankYouSection.style.opacity = '0';
+        thankYouSection.style.transform = 'translateY(50px)';
+      }
+    });
+</script>
 </body>
 </html>
-
